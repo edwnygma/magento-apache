@@ -1,6 +1,6 @@
-FROM kencookco/apache2-php7:7.0.30
+FROM edwnygma/apache2-php7:7.0.30
 
-MAINTAINER Joe Terzieva <joef@kencook.com>
+MAINTAINER Joe Terzieva <olehz@iwdagency.com>
 
 RUN a2enmod rewrite
 
