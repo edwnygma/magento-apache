@@ -8,7 +8,7 @@ ENV MAGENTO_VERSION 2.2.6
 
 RUN rm -rf /var/www/html/*
 
-RUN cd /tmp && curl http://magentostatic.kccwebstore.com/Magento-CE-$MAGENTO_VERSION.tar.gz -o $MAGENTO_VERSION.tar.gz &&\
+RUN cd /tmp && curl https://github.com/magento/magento2/archive/$MAGENTO_VERSION.tar.gz -o $MAGENTO_VERSION.tar.gz &&\
     mkdir magento &&\
     tar xvf $MAGENTO_VERSION.tar.gz -C magento/ &&\
     mv magento/* magento/.htaccess /var/www/html
